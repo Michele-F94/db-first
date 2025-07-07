@@ -1,0 +1,5 @@
+SELECT `p`.`id` AS `post_id`, COUNT(`l`.`post_id`) AS `like_number`
+FROM `posts` AS `p`
+LEFT JOIN `likes` AS `l` ON `p`.`id` = `l`.`post_id`
+GROUP BY `p`.`id`
+ORDER BY `like_number` ASC;

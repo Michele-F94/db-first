@@ -1,0 +1,11 @@
+SELECT * 
+FROM `users` AS `u`
+JOIN `medias` AS `m`
+ON `m`.`id`=`u`.`id`
+WHERE `m`.`type` = "video"
+
+
+
+
+
+

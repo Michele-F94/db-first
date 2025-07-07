@@ -1,0 +1,6 @@
+SELECT * 
+FROM `users`AS `u`
+JOIN `medias` AS `m`
+ON `u`.`id`=`m`.`id`
+GROUP BY `u`.`id` , `m`.`id`
+
